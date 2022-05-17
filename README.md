@@ -1,4 +1,5 @@
-![datahidingGif-min](https://user-images.githubusercontent.com/79328400/168865628-b041b229-4291-48d1-b687-a6dbb704555b.gif)
+
+![datagifboyut](https://user-images.githubusercontent.com/79328400/168866958-c2cbdfc4-b027-4397-804f-d9860d85d955.gif)
 
 
 
