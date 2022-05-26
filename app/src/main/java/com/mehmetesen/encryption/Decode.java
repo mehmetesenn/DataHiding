@@ -129,21 +129,21 @@ public class Decode extends AppCompatActivity implements TextDecodingCallback {
 
         if (result != null) {
             if (!result.isDecoded()){
-                message.setText("No message found");
+                message.setText("mesaj bulunamadı");
             }else {
                 if (!result.isSecretKeyWrong()) {
                     AlertDialog.Builder decodebuilder = new AlertDialog.Builder(Decode.this);
-                    decodebuilder.setTitle("Message inside the picture");
+                    decodebuilder.setTitle("Resmin içerisindeki gizli mesaj");
                     decodebuilder.setIcon(R.drawable.encryptionicon);
                     decodebuilder.setMessage(result.getMessage());
                     decodebuilder.setCancelable(false);
-                    decodebuilder.setPositiveButton("Copy", new DialogInterface.OnClickListener() {
+                    decodebuilder.setPositiveButton("Kopyala", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             ClipboardManager manager1 = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                             ClipData data1 = ClipData.newPlainText("result",result.getMessage());
                             manager1.setPrimaryClip(data1);
-                            Toast.makeText(Decode.this, "Copied", Toast.LENGTH_LONG).show();
+                            Toast.makeText(Decode.this, "Kopyalandı", Toast.LENGTH_LONG).show();
                             Intent intent =new Intent(Decode.this,MainActivity.class);
                             startActivity(intent);
                             finish();
@@ -155,11 +155,11 @@ public class Decode extends AppCompatActivity implements TextDecodingCallback {
 
 
                 } else {
-                    message.setText("Wrong secret key");
+                    message.setText("anahtarı yanlış girdiniz");
                 }
             }
         } else {
-            message.setText("Select Image First");
+            message.setText("ilk önce resim seçmelisiniz");
         }
 
 

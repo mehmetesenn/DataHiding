@@ -116,18 +116,18 @@ public class Encode extends AppCompatActivity implements TextEncodingCallback {
             imageView.setImageBitmap(encoded_image);
             //alertdialog
             AlertDialog.Builder builder = new AlertDialog.Builder(Encode.this);
-            builder.setTitle("Image Encoded");
+            builder.setTitle("Resme mesaj gizleme");
             builder.setIcon(R.drawable.encryptionicon);
             builder.setCancelable(false);
-            builder.setMessage("your message has been successfully embedded in the picture");
-            builder.setPositiveButton("Save Image", new DialogInterface.OnClickListener() {
+            builder.setMessage("Mesajınız resmin içerisine başarıyla gizlendi");
+            builder.setPositiveButton("Resmi Kaydet", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     saveToInternalStorage(encoded_image);
                     Intent intent = new Intent(Encode.this,EncodeShare.class);
                     startActivity(intent);
                     finish();
-                    Toast.makeText(Encode.this, "successfully saved to downloads folder", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Encode.this, "başarıyla indirilenler klasörüne kaydedildi", Toast.LENGTH_LONG).show();
 
                 }
             });

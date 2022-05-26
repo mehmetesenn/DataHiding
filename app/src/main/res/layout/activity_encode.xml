@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginBottom="332dp"
-        android:text="Message"
+        android:text="Mesaj"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,14 +35,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="264dp"
-        android:text="Secret key"
+        android:text="Gizli Anahtar"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <EditText
         android:id="@+id/message"
@@ -52,7 +51,7 @@
         android:layout_marginBottom="316dp"
         android:ems="10"
         android:maxLines="4"
-        android:hint="Enter message"
+        android:hint="mesajınızı giriniz"
         android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -64,7 +63,7 @@
         android:layout_marginStart="128dp"
         android:layout_marginBottom="248dp"
         android:ems="10"
-        android:hint="enter secret key"
+        android:hint="gizli anahtarı giriniz"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -76,7 +75,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/teal_200"
-        android:text="Encode"
+        android:text="Mesajı Gizle"
         android:onClick="encode"
         android:textAllCaps="false"
         android:textSize="18sp"
@@ -91,7 +90,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
         android:backgroundTint="@color/teal_200"
-        android:text="Choose Image"
+        android:text="Resim Seç"
         android:textAllCaps="false"
         android:onClick="choose"
         android:textSize="18sp"
